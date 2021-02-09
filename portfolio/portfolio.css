@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Hanalei', cursive;
+}
+
+body {
+    background-color: #eff7e1;
+}
+
+.name-container {
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
+.name-container>p {
+    font-size: 50px;
+}
