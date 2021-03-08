@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.form-container {
+    border: 1px solid black round;
+    height: 100%;
+    width: 100;
+    margin-top: 100px;
+    align-self: center;
+}
+
+.form-row {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
