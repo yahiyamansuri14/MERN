@@ -7,16 +7,10 @@ body {
     background-color: aliceblue;
 }
 
-.form-container {
-    border: 1px solid black round;
+#form-container {
+    border: 1px solid black;
     height: 100%;
-    width: 100;
+    width: 100px;
     margin-top: 100px;
     align-self: center;
-}
-
-.form-row {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
 }
