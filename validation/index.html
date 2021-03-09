@@ -8,64 +8,56 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="validation.css" />
-    <title>sign up</title>
+
+
 </head>
 
 <body>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="validation.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
     <!--form-->
     <div class="row">
         <div class="col-md-3"></div>
-        <div class="col-md-6 text-center">
-
-            <div class="form-container shadow-lg">
-                <!--Contact form start here-->
-                <span class="display-4">SignUp</span>
-                <div class="form-group form-row">
-                    <div class="col">
-                        <input type="text" class="form-control " id="firstName" placeholder="first name" required/>
+        <div class="col-md-6 text-center shadow-lg" id="form-container">
+            <!-- form-container start here-->
+            <span class="display-4">CONTACT-FORM</span>
+            <form id="form-validation">
+                <!--first name and last name box-->
+                <div class="form-row form-group">
+                    <div class="col rounded">
+                        <input type="text" class="form-control" id="firstName" placeholder="first name" required/>
+                        <div class="valid-tooltip" id="forFirstName"></div>
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control lastName" placeholder="last name" required/>
+                    <div class="col rounded">
+                        <input type="text" class="form-control" id="lastName" placeholder="last name" required/>
+                        <small id="forLastName" class="text-danger"></small>
                     </div>
                 </div>
-                <div class="form-group form-row">
-                    <div class="col">
-                        <input type="email" class="form-control email" placeholder="abc@gmail.com" required/>
+                <!--email box-->
+                <div class="form-row form-group">
+                    <div class="col rounded">
+                        <input type="email" class="form-control" id="usermail" placeholder="abc@gmail.com" required/>
+                        <span id="forEmail" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="form-row form-group">
-                    <div class="col">
-                        <input type="password" class="form-control pwd" placeholder="enter password" required/>
-                    </div>
+                    <button class="btn btn-outline-primary" type="submit">signup</button>
                 </div>
-                <!-- <div class="form-check form-check-inline form-row form-group">
-                    <div class="col-md-3">
-                        <input type="radio" id="check-1" checked/>male
-                        <label class="form-check-label" for="check-1">Male</label>
-                    </div>
-                </div> -->
-                <div class="text-center">
-                    <button class="btn btn-outline-primary border border-primary rounded signup">signup</button>
-                </div>
-                <!--Contact form end here-->
-            </div>
+            </form>
+            <!-- form-container ends here-->
         </div>
         <div class="col-md-3"></div>
     </div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.2.10/firebase-app.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="validation.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.2.10/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
